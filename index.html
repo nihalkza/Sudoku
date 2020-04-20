@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Sudoku</title>
+        <link href="css/style.css" type="text/css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/sudoku_jq.js"></script>
+    </head>
+    <body onload="sudokuLoad()">
+        <form id="sudoku_form" role="form"> 
+            <div id="container" class="container">
+                <div id="box" class="box"></div>
+                <div id="num_button" class="num_button"></div>
+            </div>
+            <button type="button" onclick="restart()" id="restart_button" class="restart_button" name="restart_button">Restart SUDOKU</button>
+            <button type="button" onclick="submitSudoku()" id="submit_button" class="submit_button" name="restart_button">SUBMIT SUDOKU</button>
+        </form>
+    </body>
+</html>
